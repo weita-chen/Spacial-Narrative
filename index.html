@@ -29,7 +29,7 @@
       // Replace YOUR_STYLE_URL with your style URL.
       style: 'mapbox://styles/aandy7391/cl9vil5pl003314lafg9j303w',
       center: [-74.004837, 40.742011],
-      zoom: 15.8
+      zoom: 15.7
     });
 
     // Code from the next step will go here.
@@ -45,7 +45,7 @@
         const popup = new mapboxgl.Popup({ offset: [0, -15] })
         .setLngLat(feature.geometry.coordinates)
         .setHTML(
-            `<h3><a href=${feature.properties.pic}>${feature.properties.Halloween}</a><p>${feature.properties.place_name}</p><p>${feature.properties.Accuracy}</p>`
+            `<h3><a href=${feature.properties.pic} target="_blank"> ${feature.properties.Halloween}</a><p>${feature.properties.place_name}</p><p>${feature.properties.Accuracy}</p>`
         )
         .addTo(map);
 });
